@@ -1,5 +1,5 @@
 import java.util.*;
-class GFG 
+class Replace
 {
     static int replaceDigit(int n, int x, int y)
     {
