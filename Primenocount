@@ -1,0 +1,36 @@
+import java.util.Scanner;
+class PrimeCheck
+{
+   public static void main(String args[])
+   {		
+	int temp,count=0;
+	boolean isPrime=true;
+	Scanner sc= new Scanner(System.in);
+		System.out.println("Enter size");
+	int n=sc.nextInt();
+	int a[]=new int[n];
+System.out.println("enter elements");
+for(int i=0;i<n;i++)
+	{
+		a[i]=sc.nextInt();
+	}
+	
+	int num=sc.nextInt();
+       
+	for(int i=2;i<=num/2;i++)
+	{
+           temp=num%i;
+	   if(temp==0)
+	   {
+	      isPrime=true;
+	      
+	      
+	      count++;
+	   }
+	}
+	      System.out.println(count);
+	   
+	
+	
+   }
+}
