@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 class PrimeCheck
 {
@@ -10,7 +11,7 @@ class PrimeCheck
 	int n=sc.nextInt();
 	int a[]=new int[n];
 System.out.println("enter elements");
-for(int i=0;i<n;i++)
+for(int i=0;i<n-1;i++)
 	{
 		a[i]=sc.nextInt();
 	}
@@ -24,9 +25,9 @@ for(int i=0;i<n;i++)
 	   {
 	      isPrime=true;
 	      
-	      
-	      count++;
 	   }
+	      count++;
+	   
 	}
 	      System.out.println(count);
 	   
