@@ -1,5 +1,5 @@
 import java .util.*;
-class Stringdotsprgm {
+class Solution {
 public static void main(String args[])
 {
 String str;
@@ -7,7 +7,6 @@ Scanner sc=new Scanner(System.in);
 System.out.print("Enter string data:");
 str=sc.nextLine();
 int sum=0;
-
 String ch[]=str.split(" ");
 int n=ch.length;
 if(n==0)
@@ -17,9 +16,11 @@ else
 String st=ch[n-1];
 sum=+st.length();
 int m=st.length();
-str=str.replaceAll(" ",".");
-System.out.println(str);
+str=str.replaceAll(" ",".");  
+int length = str.length();
+for (int i = length-1; i>=0; i--)
+System.out.print(str.charAt(i));
+}
+}
+}
 
-}
-}
-}
