@@ -1,0 +1,43 @@
+import java.util.*;
+import java.lang.*;
+class SelectionSort
+{
+ public static void main(String args[])
+ {
+   Scanner sc=new Scanner(System.in);
+   int a[],n,i,j,temp,min;
+   System.out.println("enter the size of an array");
+   n=sc.nextInt();
+   a=new int[n];
+   System.out.println("enter values of an array");
+   for(i=0;i<n;i++)
+   {
+    a[i]=sc.nextInt();
+   }
+   System.out.println("elements of an array before sorting");
+   for(i=0;i<n;i++)
+   {
+     System.out.println(a[i]);
+   }
+   for(i=0;i<n-1;i++)
+   {
+    min=i;
+    for(j=i+1;j<n;j++)
+    {
+     if(a[j]<a[min])
+     {
+     min=j;
+     }
+    }
+    temp=a[i];
+    a[i]=a[min];
+    a[min]=temp;
+   } 
+   System.out.println("elements of an array after sorting");
+   for(i=0;i<n;i++)
+   {
+     System.out.println(a[i]);
+   }
+ }
+}
+
